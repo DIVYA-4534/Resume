@@ -1,0 +1,176 @@
+/* Universal Reset & Base Typography */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333333;
+    line-height: 1.6;
+    padding: 20px;
+}
+
+.resume-container {
+    max-width: 900px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    border: 1px solid #dce4ec;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+#profile-header {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding-bottom: 25px;
+    margin-bottom: 25px;
+    border-bottom: 3px solid #1a365d;
+}
+
+.profile-pic {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid #1a365d;
+    background-color: #e2e8f0;
+}
+
+.header-info h1 {
+    font-size: 2.2rem;
+    color: #1a365d;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-size: 1.05rem;
+    color: #4a5568;
+    font-weight: 500;
+    margin-bottom: 10px;
+}
+
+.contact-links {
+    font-size: 0.95rem;
+    color: #2d3748;
+}
+
+.contact-links a {
+    color: #2b6cb0;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.contact-links a:hover {
+    text-decoration: underline;
+    color: #1a365d;
+}
+
+.resume-section {
+    margin-bottom: 28px;
+}
+
+.resume-section h2 {
+    font-size: 1.35rem;
+    color: #1a365d;
+    background-color: #ebf4ff;
+    padding: 8px 14px;
+    border-left: 5px solid #2b6cb0;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.table-wrapper {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+th, td {
+    border: 1px solid #cbd5e0;
+    padding: 12px 15px;
+    text-align: left;
+}
+
+th {
+    background-color: #1a365d;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+tr:nth-child(even) {
+    background-color: #f7fafc;
+}
+
+/* Lists Styling */
+ul {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+
+.project-item {
+    margin-bottom: 15px;
+    padding: 12px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 5px;
+}
+
+.project-item h3 {
+    font-size: 1.1rem;
+    color: #2d3748;
+    margin-bottom: 5px;
+}
+
+.two-column-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 25px;
+}
+
+footer {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid #e2e8f0;
+    font-size: 0.9rem;
+    color: #718096;
+}
+
+
+@media (max-width: 650px) {
+    body {
+        padding: 10px;
+    }
+
+    .resume-container {
+        padding: 20px;
+    }
+
+    #profile-header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .two-column-grid {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .header-info h1 {
+        font-size: 1.8rem;
+    }
+}
